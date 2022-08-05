@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <img src="img/Logo.png" id="logo">
+        </header>
+        <main>
+            <h2>Encriptador / Desencriptador</h2>
+                <div id="contenedor">   
+                    <div id="caja">
+
+                        <input type="text" required="required">
+                        <span>Ingresa el mensaje aqui</span>
+
+                    </div>
+                </div>
+                <div class="botones">
+                    <button id="b_encriptar" onclick="encriptar()">Encriptar</button>
+                    <button id="b_desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+
+                <div id="resultado">
+                    <img src="img/Muñeco.png" id="muñeco">
+                    <p id="nofound">Ningun mensaje fue encontrado aun</p>
+        
+                    <textarea id="cajaresultado" cols="45" rows="20"></textarea>
+                    <button id="copy" onclick="copiar()">¡COPIAR!</button>
+                </div>
+
+        </main>
+        <img id="encriptimg" src="img/encript.png" alt="">
+    </body>
+</html>
