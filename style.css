@@ -116,7 +116,7 @@ input:valid + span, input:focus + span{
 #copy{
     display: none;
     margin-top: 5px;
-    margin-left: 140px;
+    margin-left: 110px;
 }
 
 
