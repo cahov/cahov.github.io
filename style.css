@@ -23,11 +23,6 @@ h2{
     text-align: center;
 }
 
-#tip{
-    color: #343A40;
-    font-size: 16px;
-    text-align: center;
-}
 
 #contenedor{
     background: #FFFFFF;
@@ -35,8 +30,8 @@ h2{
 }
 #caja{
     position: absolute;
-    top: 30%;
-    right: 40%;
+    top: 220px;
+    left: 130px;
 }
 
 input{
@@ -52,8 +47,8 @@ input[type="text"]{
 
 #resultado{
     background: #FFFFFF;
-    width: 400px;
-    height: 700px;
+    width: 340px;
+    height: 610px;
     position: absolute;
     left: 994px;
     top: 30px;
@@ -69,7 +64,7 @@ input[type="text"]{
 .botones{
     position: absolute;
     top: 320px;
-    left: 280px;
+    left: 225px;
 }
 button{
     color: #fff;
@@ -93,7 +88,7 @@ button:nth-child(2){
     position: absolute;
     width: 250px;
     height: 250px;
-    margin-top: 25%;
+    margin-top: 22%;
     margin-left: 1%;
 }
 
