@@ -1,8 +1,8 @@
 function encriptar(){
     var mensaje = document.getElementById("input").value;
-    var texto = mensaje.replace(/i/igm, "imes");
+    var texto = mensaje.replace(/e/igm, "enter");
+    var texto = texto.replace(/i/igm, "imes");
     var texto = texto.replace(/a/igm, "ai");
-    var texto = texto.replace(/e/igm, "enter");
     var texto = texto.replace(/o/igm, "ober");
     var texto = texto.replace(/u/igm, "ufat");
     document.getElementById("resultado").innerHTML = texto;
