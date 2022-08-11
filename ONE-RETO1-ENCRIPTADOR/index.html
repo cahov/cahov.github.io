@@ -17,8 +17,7 @@
 <body>
     <div class="contenedor">
         <div class="area-input">
-            <!-- <span id="tip1">Ingrese el texto aqui</span> -->
-            <textarea id="input" cols="30" rows="10" required
+            <textarea id="input" cols="30" rows="10" required onkeypress="return check(event)" oninput="this.value=this.value.toLowerCase();"
             placeholder="Ingrese el texto aquí"></textarea>
             <span id="tip2"><span class="iconify" data-icon="akar-icons:circle-alert-fill"></span> solo letras minusculas y sin acentos</span>
             <div class="area-botones">
