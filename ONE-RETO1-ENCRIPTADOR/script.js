@@ -33,3 +33,18 @@ function copiar(){
     texto.select();
     navigator.clipboard.writeText(texto.value);
 }
+
+
+function check(e) {
+    tecla = (document.all) ? e.keyCode : e.which;
+
+    //Tecla para borrar y espacio permitidas
+    if (tecla == 8 || tecla == 32) {
+        return true;
+    }
+
+    // Solo acepta numeros y letras
+    patron = /[A-Za-z0-9]/;
+    tecla_final = String.fromCharCode(tecla);
+    return patron.test(tecla_final);
+}
