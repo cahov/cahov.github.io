@@ -1,0 +1,129 @@
+header{
+    height: 10vh;
+}
+header h1{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 10vh;
+    color: #0e3f55;
+}
+
+body{
+    background-image: url(bg.png);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    gap: 3vw;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+    gap: 1vh;
+    height: 62vh;
+}
+
+
+#imagen{
+    margin-top: 10vw;
+    width: 55%;
+    border-radius: 50%;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 5vh;
+    color: gray;
+}
+
+#nombre{
+    text-align: center;
+    width: 70vw;
+    font-size: 2em;
+    color: white;
+    padding-bottom: 2vh;
+}
+
+#b_generar{
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin-top: 2.5vw;
+    width: 40vw;
+    height: 10vw;
+    cursor: pointer;
+}
+
+@media (min-width: 1023px){
+    body{
+        background-image: url(bg.png);
+    }
+    .contenedor{
+        gap: 0;
+    }
+
+    .card{
+        flex-direction: row;
+        width: 90vw;
+        height: 50vh;
+    }
+
+    #imagen{
+        position: relative;
+        min-width: 15%;
+        max-width: 20%;
+        border-radius: 50%;
+        margin-bottom: 25vh;
+        margin-left: 5vw;
+    }
+
+    .card-info{
+        flex-direction: row;
+        gap: 4vh;
+        font-size: 2em;
+        color: gray;
+        width: 80vw;
+        margin-left: -15vw;
+        margin-top: 40vh;
+    }
+    
+    #nombre{
+
+        position: absolute;
+        max-width: 65vw;
+        max-height: 11vw;
+        text-align: center;
+        font-size: 2.5em;
+        color: white;
+        top: 35vh;
+        left: 30vw;
+
+    }
+
+    #b_generar{
+        font-size: 1.5em;
+        letter-spacing: 0.15em;
+        border-radius: 16px;
+        margin-top: 1vw;
+        width: 20vw;
+        height: 5vw;
+    }
+}
+
+
