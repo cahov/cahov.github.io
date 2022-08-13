@@ -1,19 +1,11 @@
 getRick();
 
-
-function getName(id){
-    fetch('https://rickandmortyapi.com/api/character/'+id)
-    .then(res => res.json())
-    .then(data => {
-        return data.name
-    })
-}
-
 function getRandomIntInclusive() {
     min = Math.ceil(1);
     max = Math.floor(826);
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
+
 function getRick(){
     fetch('https://rickandmortyapi.com/api/character/'+getRandomIntInclusive())
     .then(res => res.json())
