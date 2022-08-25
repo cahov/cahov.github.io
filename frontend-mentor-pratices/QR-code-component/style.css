@@ -45,6 +45,20 @@ body{
     margin: 1rem 0;
 }
 
+@media (min-width:1019px){
+    .container{
+        width: 22vw;
+    }
+    .text h2{
+        padding: 0 0rem;
+    }
+    
+    .text p{
+        padding: 0 0.4rem;
+        margin: 1rem 0;
+    }
+}
+
 @media (min-width:1440px){
     .container{
         width: 20vw;
