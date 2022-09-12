@@ -1,0 +1,136 @@
+body{
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#btn_atras{
+    color: white;
+    background-color: #0A3871;
+    border-radius: 15px;
+    width: 10rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_pc{
+    display: none;
+}
+
+.area-input{
+    display: flex;
+}
+
+#btn_aleatorio, .btn_pc{
+    color: white;
+    background-color: #0A3871;
+    border-radius: 15px;
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;  
+}
+
+.opcion{
+    margin-top: .8rem;
+    margin-left: .4rem;
+}
+ul{
+    margin-left: -2.5rem;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    color: brown;
+    font-size: 1.8rem;
+}
+input{
+    margin-top: 1rem;
+    width: 1.5rem;
+    color:#0A3871;
+    font-size: 2rem;
+}
+
+.ahorcado{
+    width: 40vw;
+}
+
+.logo{
+    width: 15rem;
+}
+
+select{
+    height: 1.5rem;
+}
+
+h1,h2, p{
+    color:#0A3871
+}
+
+.teclas{
+    margin-top: 1rem;
+    width: 95vw;
+    gap: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.teclas button{
+    margin: .1rem;
+    text-align: center;
+    width: 12vw;
+    height: 5vh;
+    border: 1px solid #0A3871;
+    border-radius: 5px;
+    background-color: white;
+    color: #0A3871;
+}
+
+.erroneo{
+    color: red;
+}
+
+@media (min-width: 800px){
+    main{
+        flex-direction: column;
+    }
+    .ahorcado{
+        width: 15%;
+    }
+    p{
+        font-size: 2rem;
+    }
+    select{
+        height: 2rem;
+    }
+
+    .opcion{
+        margin-top: 2.2rem;
+    }
+
+    #input_letra{
+        position: absolute;
+        bottom: -8vh;
+    }
+
+    #btn_aleatorio{
+        display: none;
+    }
+    .btn_pc{
+        display: block;
+    }
+    .teclas{
+        display: none;
+    }
+
+    .btn_pc:hover, #btn_atras:hover{
+        cursor: pointer;
+        background-color: white;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+    }
+}

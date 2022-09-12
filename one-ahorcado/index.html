@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./css.css">
+    <title>Ahorcado Alura</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Header.png" alt="logo de alura">
+    </header>
+    <main>
+        <img class="ahorcado" src="img/ahorcado_1.png" alt="dibujo ahorcado">
+        <h1></h1>
+        <h2></h2>
+        <button id="btn_empezar">Empezar</button>
+        <input type="text" id="input_palabra" >
+        <div class="area-input">
+            <p>Elija la cantidad de letras </p>
+            <div class="opcion">
+                <select name="" id="cantidad_letras">
+                <option value="4">4 letras</option>
+                <option value="5">5 letras</option>
+                <option value="6">6 letras</option>
+                <option value="7">7 letras</option>
+                <option value="8">8 letras</option>
+                <option value="9">9 letras</option>
+                <option value="10">10 letras</option>
+                <option value="11">11 letras</option>
+                <option value="12">12 letras</option>
+                <option value="13">13 letras</option>
+            </select>
+            </div>
+        </div>
+        <button id="btn_aleatorio">¡Jugar!</button>
+        <button class="btn_pc">¡Jugar!</button>
+        <div class="palabras">
+            <ul>
+            </ul>
+        </div>
+        <button id="btn_atras">Volver</button>
+        <input id="input_letra" type="text" maxlength="1" required autofocus>
+        <div class="teclas">
+
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
